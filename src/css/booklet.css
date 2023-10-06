@@ -2,11 +2,18 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* Header styles */
+header {
+    top: 53px;
+    left: 209px;
+    width: 1502px;
+    height: 65px;
+    /* UI Properties */
+    opacity: 1;
+}
 
-
-
-/*  styles for the logo */
+/* Styles for the logo */
 .logo {
     position: absolute;
     top: 53px;
@@ -18,12 +25,11 @@ body {
 }
 
 .logo img {
-    
     max-width: 100%;
     height: auto;
 }
 
-/*  styles for the navigation */
+/* Styles for the navigation */
 nav {
     position: absolute;
     top: 65px;
@@ -38,7 +44,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    
 }
 
 nav ul li {
@@ -54,6 +59,7 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
+
 /* Style the dropdown menu */
 .dropdown {
     position: relative;
@@ -85,8 +91,7 @@ nav ul li a {
     text-decoration: underline;
 }
 
-/*  styles for the Contact Us div */
-
+/* Styles for the Contact Us div */
 .contact {
     position: absolute;
     top: 53px;
@@ -97,16 +102,13 @@ nav ul li a {
     border-radius: 22px;
     opacity: 1;
 }
-.contact button{
+
+.contact button {
     text-align: center;
-    
+    padding: 5px 10px; /* Add padding to the button */
 }
 
-
-
-
-
-/*  styles for the <h2> element */
+/* Styles for the <h2> element */
 .hero h1 {
     position: absolute;
     top: 377px;
@@ -114,13 +116,14 @@ nav ul li a {
     width: 839px;
     height: 106px;
     text-align: left;
-    font: normal normal medium 120px/110px DM Sans; /* Increased font-size */
+    font: normal normal medium 200px/110px DM Sans; 
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    font-size: 76px; 
 }
 
-/*  styles for the <p> element */
+/* Styles for the <p> element */
 .hero p {
     position: absolute;
     top: 513px;
@@ -134,11 +137,9 @@ nav ul li a {
     opacity: 1;
 }
 
-
-/* button inside the .hero div */
+/* Button inside the .hero div */
 .hero button {
     position: absolute;
-    
     top: 767px;
     left: 209px;
     width: 267px;
@@ -147,27 +148,23 @@ nav ul li a {
     border: none; /* Remove the default button border */
     border-radius: 29px; /* Apply border-radius for rounded corners */
     color: #FFFFFF; /* Text color */
-    font: normal normal normal 16px/42px DM Sans;
+    font: normal normal normal 16px/58px DM Sans; /* Adjust line-height to match button height */
     letter-spacing: 0px;
     text-align: center;
     cursor: pointer; /* Add a pointer cursor for interactivity */
+    display: flex; /* Use flexbox to center align contents */
+    justify-content: center; /* Horizontally center align contents */
+    align-items: center; /* Vertically center align contents */
     opacity: 1;
 }
 
-
-    
-
-
-
-/* Define hover effect for the button  */
+/* Hover effect for the button */
 .hero button:hover {
     background-color: #333333; /* Change background color on hover */
     color: #FFFFFF; /* Change text color on hover */
 }
 
-/* Define styles for the .hero-1 div */
-
-/* Define styles for the .hero-2 div */
+/* Styles for the .hero-2 div */
 .hero-2 {
     position: absolute;
     top: 430px;
@@ -179,6 +176,7 @@ nav ul li a {
     opacity: 0.87;
 }
 
+/* Styles for the .hero-1 div */
 .hero-1 {
     position: fixed; /* or use absolute positioning if needed */
     top: 0;
@@ -190,11 +188,13 @@ nav ul li a {
     opacity: 1; /* Fully visible, you can remove this line if not needed */
 }
 
+/* Styles for hero image */
 .hero img {
     background-color: white;
     border-radius: 50%;
     height: 35px;
     width: 35px;
+    margin-right: 20px; /* Add some spacing between image and text */
 }
 
 
@@ -204,3 +204,59 @@ nav ul li a {
 
 
 
+
+
+
+
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+
+    .logo {
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 40px;
+    }
+
+    nav {
+        top: 10px;
+        left: 10px;
+        width: auto;
+    }
+
+    .contact {
+        top: 10px;
+        left: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        top: 200px;
+        left: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .hero p {
+        font-size: 20px;
+        top: 300px;
+        left: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .hero button {
+        font-size: 16px;
+        top: 400px;
+        left: 10px;
+        width: auto;
+        height: auto;
+    }
+}
